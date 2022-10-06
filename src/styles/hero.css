@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.hero .hero-text ,.hero .hero-img {
+    width: 50%;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.hero .hero-img{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.hero .hero-img img{
+    width: 90%;
+   
+}
+.hero .hero-text h1{
+    font-size: 4rem;
+}
+.hero .hero-text span{
+    color: #5e45c8;
+}
+.hero button{
+    width: 150px;
+    margin: 20px 10px;
+}
+.hero button:nth-child(2){
+    background: #000;
+}

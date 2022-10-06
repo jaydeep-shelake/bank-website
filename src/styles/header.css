@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    padding: 10px;
+    box-shadow: 0 1px 5px #ababab;
+}
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 17px;
+   
+}
+nav .nav-links li{
+    margin: 0 20px;
+}
+nav .logo span{
+    color:#5e45c8;
+}

@@ -1,0 +1,15 @@
+.home-about{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 10rem;
+    background: #5e45c8;
+    color: #fff;
+    border-radius: 20px;
+    padding: 30px;
+}
+.home-about p{
+    margin: 1.2rem 0;
+}
+.home-about button{
+    background: #000;
+}
