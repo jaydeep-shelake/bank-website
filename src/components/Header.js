@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import '../styles/header.css'
-const Header = () => {
+import { connect } from 'react-redux';
+const Header = (props) => {
   return (
     <nav>
       <div className="logo">
@@ -12,12 +14,22 @@ const Header = () => {
        <li>Loans</li>
       </ul>
       <div className="buttons">
-     <button>
-        Signin
-     </button>
+        {
+          props.user?(
+           <Link to="/user"> <div className="profile-icon"><p>{props?.user?.name[0]}</p></div></Link>
+          ):(
+            <Link to="/login"> <button>
+            Signin
+         </button></Link>
+          )
+        }
+    
       </div>
     </nav>
   )
 }
 
-export default Header
+const mapStateToProps=(state)=>{
+  return{user:state?.user?.user}
+ }
+ export default connect(mapStateToProps)(Header)

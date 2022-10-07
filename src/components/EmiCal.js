@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import '../styles/calci.css'
 function EmiCal() {
   // state to storage the values given by the user when filling the input fields
   const [userValues, setUserValues] = useState({
